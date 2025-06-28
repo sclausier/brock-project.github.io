@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+        <title>Brock Fit Check &lt;3</title>
+        <style>
+            h1, h2 {text-align: center;}
+        </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Brock Fit Check :3</h1>
+        <h2>Welcome to Brock's World! Help him pick out his outfit today!</h2>
+
+        <div id="parent">
+            <div class="cat">
+                <img src="images/Brock.jpg" alt="Brock" style="width: 308px;height: 599px;">
+            </div>
+            <div class="pants">
+                <img id="pantsImage" src="" class="" width="190" height="auto">
+            </div>
+            <div class="shirt">
+                <img id="shirtImage" src="" class="" width="240" height="auto">
+            </div>
+            <div class="overalls">
+                <img id="overallsImage" src="" class="" width="195" height="auto">
+            </div>
+            <div class="shoes">
+                <img id="shoesImage" src="" class="" width="250" height="auto">
+            </div>
+            <div class="earrings">
+                <img id="earringsImage" src="" class="" width="32" height="auto">
+            </div>
+            <div class="sprout">
+                <img id="sproutImage" src="" class="" width="50" height="auto">
+            </div>
+            <div class="bow">
+                <img id="bowImage" src="" class="" width="70" height="auto">
+            </div>
+
+        
+
+            <div class="quiz1">
+                <form>
+                    <script type="text/javascript">
+                        function changeShirt(fileName) {
+                            let img = document.querySelector("#shirtImage");
+                            img.setAttribute("src", fileName);
+                        }
+                        function changePants(fileName) {
+                            if (fileName!=='images/overalls.jpg') {
+                                let img = document.querySelector("#pantsImage");
+                                img.setAttribute("src", fileName);
+                                let img2 = document.querySelector("#overallsImage");
+                                img2.setAttribute("src", '');
+                            } else {
+                                let img = document.querySelector("#overallsImage");
+                                img.setAttribute("src", 'images/overalls.jpg');
+                                let img2 = document.querySelector("#pantsImage");
+                                img2.setAttribute("src", '');
+                            }
+                        }
+                        function changeShoes(fileName) {
+                            let img = document.querySelector('#shoesImage');
+                            img.setAttribute('src', fileName);
+                        }
+                        function changeAccessory(fileName) {
+                            if (fileName==='images/earrings.jpg') {
+                                let img1 = document.querySelector('#earringsImage');
+                                img1.setAttribute("src", fileName);
+                                let img2 = document.querySelector('#sproutImage');
+                                img2.setAttribute("src", '');
+                                let img3 = document.querySelector('#bowImage');
+                                img3.setAttribute("src", '');
+                            } else if (fileName==='images/sprout.jpg') {
+                                let img1 = document.querySelector('#earringsImage');
+                                img1.setAttribute("src", '');
+                                let img2 = document.querySelector('#sproutImage');
+                                img2.setAttribute("src", fileName);
+                                let img3 = document.querySelector('#bowImage');
+                                img3.setAttribute("src", '');
+                            } else {
+                                let img1 = document.querySelector('#earringsImage');
+                                img1.setAttribute("src", '');
+                                let img2 = document.querySelector('#sproutImage');
+                                img2.setAttribute("src", '');
+                                let img3 = document.querySelector('#bowImage');
+                                img3.setAttribute("src", fileName);
+                            }
+                        }
+                    </script>
+                    <p>Shirts:</p>
+                    <input onclick="changeShirt('images/miffy.jpg')" type="radio" id="miffy" name="shirts" value="Miffy Shirt">
+                    <label for="miffy">Miffy Shirt</label>
+                    <br>
+                    <input onclick="changeShirt('images/fish.jpg')" type="radio" id="fish" name="shirts" value="Fish Shirt">
+                    <label for="fish">Fish Shirt</label>
+                    <br>
+                    <input onclick="changeShirt('images/krobus.jpg')" type="radio" id="krobus" name="shirts" value="Krobus Shirt">
+                    <label for="krobus">Krobus Shirt</label>
+                    <br>
+                    <input onclick="changeShirt('')" type="radio" id="none" name="shirts" value="Clear" checked>
+                    <label for="none">Clear</label>
+                    <br>
+                    <br>
+
+
+                    <p>Pants:</p>
+                    <input onclick="changePants('images/overalls.jpg')" type="radio" id="overalls" name="pants" value="Overalls">
+                    <label for="overalls">Overalls</label>
+                    <br>
+                    <input onclick="changePants('images/cargos.jpg')" type="radio" id="cargo" name="pants" value="Cargos">
+                    <label for="cargo">Cargos</label>
+                    <br>
+                    <input onclick="changePants('images/jorts.jpg')" type="radio" id="jorts" name="pants" value="Jorts">
+                    <label for="jorts">Jorts</label>
+                    <br>
+                    <input onclick="changePants('')" type="radio" id="none" name="pants" value="Clear" checked>
+                    <label for="none">Clear</label>
+                    <br>
+                    <br>
+                </form>
+            </div>
+            <div class="quiz2">
+                <form>
+                    <p>Shoes:</p>
+                    <input onclick="changeShoes('images/reeboks.jpg')" type="radio" id="reeboks" name="shoes" value="Reeboks">
+                    <label for="reeboks">Reeboks</label>
+                    <br>
+                    <input onclick="changeShoes('images/converse.jpg')" type="radio" id="converse" name="shoes" value="Converse">
+                    <label for="converse">Converse</label>
+                    <br>
+                    <input onclick="changeShoes('images/tubes.jpg')" type="radio" id="tubes" name="shoes" value="Tube Socks">
+                    <label for="tubes">Tube Socks</label>
+                    <br>
+                    <input onclick="changeShoes('')" type="radio" id="none" name="shoes" value="Clear" checked>
+                    <label for="none">Clear</label>
+                    <br>
+                    <br>
+
+
+                    <p>Accesories:</p>
+                    <input onclick="changeAccessory('images/bow.jpg')" type="radio" id="bowtie" name="accessories" value="Bowtie">
+                    <label for="bowtie">Bowtie</label>
+                    <br>
+                    <input onclick="changeAccessory('images/sprout.jpg')" type="radio" id="sprout" name="accessories" value="Sprout">
+                    <label for="sprout">Sprout</label>
+                    <br>
+                    <input onclick="changeAccessory('images/earrings.jpg')" type="radio" id="earrings" name="accessories" value="Earrings">
+                    <label for="earrings">Earrings</label>
+                    <br>
+                    <input onclick="changeAccessory('')" type="radio" id="none" name="accessories" value="Clear" checked>
+                    <label for="none">Clear</label>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

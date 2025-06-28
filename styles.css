@@ -1,0 +1,83 @@
+h1 {
+    font-size: 400%;
+}
+
+h1, h2 {
+    text-shadow: #99D999 0 0 20px;
+}
+
+h1, h2, p, form{
+    color: midnightblue;
+    font-family: "Cherry Bomb One", system-ui;
+}
+
+form {
+    font-size: 25px;
+}
+body {
+    background-image: url('images/background.jpg'); 
+}
+
+#parent {
+    position: relative;
+}
+
+.cat {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+}
+
+.quiz1 {
+    position: absolute;
+    top: 40px;
+    left: 800px;
+}
+
+.quiz2 {
+    position: absolute;
+    top: 40px;
+    left: 1000px;
+}
+
+.shirt {
+    position: absolute;
+    top: 232px; 
+    left: 289px;
+}
+
+.pants {
+    position: absolute;
+    top: 370px;
+    left: 313px;
+}
+
+.overalls {
+    position: absolute;
+    top: 233px;
+    left: 320px;
+}
+
+.shoes {
+    position: absolute;
+    top: 520px;
+    left: 302px;
+}
+
+.earrings {
+    position: absolute;
+    top: 96px;
+    left: 465px;
+}
+
+.sprout {
+    position: absolute;
+    top: 80px;
+    left: 375px;
+}
+
+.bow {
+    position: absolute;
+    top: 250px;
+    left: 375px;
+}
