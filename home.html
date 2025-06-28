@@ -17,7 +17,7 @@
 
         <div id="parent">
             <div class="cat">
-                <img src="images/Brock.jpg" alt="Brock" style="width: 308px;height: 599px;">
+                <img src="Brock.jpg" alt="Brock" style="width: 308px;height: 599px;">
             </div>
             <div class="pants">
                 <img id="pantsImage" src="" class="" width="190" height="auto">
@@ -51,14 +51,14 @@
                             img.setAttribute("src", fileName);
                         }
                         function changePants(fileName) {
-                            if (fileName!=='images/overalls.jpg') {
+                            if (fileName!=='overalls.jpg') {
                                 let img = document.querySelector("#pantsImage");
                                 img.setAttribute("src", fileName);
                                 let img2 = document.querySelector("#overallsImage");
                                 img2.setAttribute("src", '');
                             } else {
                                 let img = document.querySelector("#overallsImage");
-                                img.setAttribute("src", 'images/overalls.jpg');
+                                img.setAttribute("src", 'overalls.jpg');
                                 let img2 = document.querySelector("#pantsImage");
                                 img2.setAttribute("src", '');
                             }
@@ -68,14 +68,14 @@
                             img.setAttribute('src', fileName);
                         }
                         function changeAccessory(fileName) {
-                            if (fileName==='images/earrings.jpg') {
+                            if (fileName==='earrings.jpg') {
                                 let img1 = document.querySelector('#earringsImage');
                                 img1.setAttribute("src", fileName);
                                 let img2 = document.querySelector('#sproutImage');
                                 img2.setAttribute("src", '');
                                 let img3 = document.querySelector('#bowImage');
                                 img3.setAttribute("src", '');
-                            } else if (fileName==='images/sprout.jpg') {
+                            } else if (fileName==='sprout.jpg') {
                                 let img1 = document.querySelector('#earringsImage');
                                 img1.setAttribute("src", '');
                                 let img2 = document.querySelector('#sproutImage');
@@ -93,13 +93,13 @@
                         }
                     </script>
                     <p>Shirts:</p>
-                    <input onclick="changeShirt('images/miffy.jpg')" type="radio" id="miffy" name="shirts" value="Miffy Shirt">
+                    <input onclick="changeShirt('miffy.jpg')" type="radio" id="miffy" name="shirts" value="Miffy Shirt">
                     <label for="miffy">Miffy Shirt</label>
                     <br>
-                    <input onclick="changeShirt('images/fish.jpg')" type="radio" id="fish" name="shirts" value="Fish Shirt">
+                    <input onclick="changeShirt('fish.jpg')" type="radio" id="fish" name="shirts" value="Fish Shirt">
                     <label for="fish">Fish Shirt</label>
                     <br>
-                    <input onclick="changeShirt('images/krobus.jpg')" type="radio" id="krobus" name="shirts" value="Krobus Shirt">
+                    <input onclick="changeShirt('krobus.jpg')" type="radio" id="krobus" name="shirts" value="Krobus Shirt">
                     <label for="krobus">Krobus Shirt</label>
                     <br>
                     <input onclick="changeShirt('')" type="radio" id="none" name="shirts" value="Clear" checked>
@@ -109,13 +109,13 @@
 
 
                     <p>Pants:</p>
-                    <input onclick="changePants('images/overalls.jpg')" type="radio" id="overalls" name="pants" value="Overalls">
+                    <input onclick="changePants('overalls.jpg')" type="radio" id="overalls" name="pants" value="Overalls">
                     <label for="overalls">Overalls</label>
                     <br>
-                    <input onclick="changePants('images/cargos.jpg')" type="radio" id="cargo" name="pants" value="Cargos">
+                    <input onclick="changePants('cargos.jpg')" type="radio" id="cargo" name="pants" value="Cargos">
                     <label for="cargo">Cargos</label>
                     <br>
-                    <input onclick="changePants('images/jorts.jpg')" type="radio" id="jorts" name="pants" value="Jorts">
+                    <input onclick="changePants('jorts.jpg')" type="radio" id="jorts" name="pants" value="Jorts">
                     <label for="jorts">Jorts</label>
                     <br>
                     <input onclick="changePants('')" type="radio" id="none" name="pants" value="Clear" checked>
@@ -127,13 +127,13 @@
             <div class="quiz2">
                 <form>
                     <p>Shoes:</p>
-                    <input onclick="changeShoes('images/reeboks.jpg')" type="radio" id="reeboks" name="shoes" value="Reeboks">
+                    <input onclick="changeShoes('reeboks.jpg')" type="radio" id="reeboks" name="shoes" value="Reeboks">
                     <label for="reeboks">Reeboks</label>
                     <br>
-                    <input onclick="changeShoes('images/converse.jpg')" type="radio" id="converse" name="shoes" value="Converse">
+                    <input onclick="changeShoes('converse.jpg')" type="radio" id="converse" name="shoes" value="Converse">
                     <label for="converse">Converse</label>
                     <br>
-                    <input onclick="changeShoes('images/tubes.jpg')" type="radio" id="tubes" name="shoes" value="Tube Socks">
+                    <input onclick="changeShoes('tubes.jpg')" type="radio" id="tubes" name="shoes" value="Tube Socks">
                     <label for="tubes">Tube Socks</label>
                     <br>
                     <input onclick="changeShoes('')" type="radio" id="none" name="shoes" value="Clear" checked>
@@ -143,13 +143,13 @@
 
 
                     <p>Accesories:</p>
-                    <input onclick="changeAccessory('images/bow.jpg')" type="radio" id="bowtie" name="accessories" value="Bowtie">
+                    <input onclick="changeAccessory('bow.jpg')" type="radio" id="bowtie" name="accessories" value="Bowtie">
                     <label for="bowtie">Bowtie</label>
                     <br>
-                    <input onclick="changeAccessory('images/sprout.jpg')" type="radio" id="sprout" name="accessories" value="Sprout">
+                    <input onclick="changeAccessory('sprout.jpg')" type="radio" id="sprout" name="accessories" value="Sprout">
                     <label for="sprout">Sprout</label>
                     <br>
-                    <input onclick="changeAccessory('images/earrings.jpg')" type="radio" id="earrings" name="accessories" value="Earrings">
+                    <input onclick="changeAccessory('earrings.jpg')" type="radio" id="earrings" name="accessories" value="Earrings">
                     <label for="earrings">Earrings</label>
                     <br>
                     <input onclick="changeAccessory('')" type="radio" id="none" name="accessories" value="Clear" checked>
